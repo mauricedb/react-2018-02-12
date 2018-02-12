@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import Movie from './Movie';
+import { loadMovies } from '../redux/actions';
 
 class Movies extends Component {
-  state = { movies: [] };
+  // state = { movies: [] };
 
-  async componentDidMount() {
-    const response = await fetch('/movies.json');
-    const data = await response.json();
-    this.setState({ movies: data.results });
+  // async componentDidMount() {
+  //   const response = await fetch('/movies.json');
+  //   const data = await response.json();
+  //   this.setState({ movies: data.results });
+  // }
+
+  componentDidMount() {
+    this.props.loadMovies();
   }
 
   render() {
-    const { movies } = this.state;
+    // const { movies } = this.state;
+    const { movies } = this.props;
+
     return (
       <div>
         <h2>Movies</h2>
@@ -23,4 +31,10 @@ class Movies extends Component {
   }
 }
 
-export default Movies;
+const mapStateToProps = state => ({ movies: state.movies });
+
+const mapDispatchToProps = dispatch => ({
+  loadMovies: () => dispatch(loadMovies())
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Movies);

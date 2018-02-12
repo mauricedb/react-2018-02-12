@@ -9,6 +9,8 @@
 * https://nodejs.org/en/
 * https://www.npmjs.com/package/rimraf
 * https://jakearchibald.com/2017/es-modules-in-browsers/
+* https://github.com/prettier/eslint-config-prettier
+* http://wes.io/maOn
 
 
 ## Webpack
