@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Counter component renders the same tree 1`] = `
+<div>
+  <p>
+    The count = 
+    0
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Increment
+  </button>
+</div>
+`;

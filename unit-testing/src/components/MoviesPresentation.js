@@ -3,18 +3,15 @@ import PropTypes from 'prop-types';
 import moviesStateHOC from './moviesStateHOC';
 import Movie from './Movie';
 
-const MoviePresentation = ({ title, movies }) => {
-  console.log('Rendering MoviePresentation');
-  return (
-    <div>
-      <h2>{title}</h2>
+const MoviesPresentation = ({ title, movies }) => (
+  <div>
+    <h2>{title}</h2>
 
-      <ul>{movies.map(movie => <Movie key={movie.id} movie={movie} />)}</ul>
-    </div>
-  );
-};
+    <ul>{movies.map(movie => <Movie key={movie.id} movie={movie} />)}</ul>
+  </div>
+);
 
-MoviePresentation.propTypes = {
+MoviesPresentation.propTypes = {
   title: PropTypes.string.isRequired,
   movies: PropTypes.arrayOf(
     PropTypes.shape({
@@ -23,4 +20,4 @@ MoviePresentation.propTypes = {
   ).isRequired
 };
 
-export default moviesStateHOC(MoviePresentation);
+export default moviesStateHOC(MoviesPresentation);

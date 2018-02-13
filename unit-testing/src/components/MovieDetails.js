@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import moviesStateHOC from './moviesStateHOC';
 import './MovieDetails.css';
 
-class MovieDetails extends Component {
+export class MovieDetails extends Component {
   render() {
-    const { movies } = this.props;
-    const { match } = this.props;
+    const { movies, match } = this.props;
     const id = +match.params.movieId;
     const movie = movies.find(m => m.id === id);
 

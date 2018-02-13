@@ -16,6 +16,11 @@
 * http://wes.io/maOn
 * https://caniuse.com/
 
+## Visual Studio Code
+* https://code.visualstudio.com
+* https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
+* https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
 
 ## Webpack
 * https://www.npmjs.com/package/webpack-bundle-analyzer
@@ -33,6 +38,13 @@
 * https://www.npmjs.com/package/react-scripts-ts
 * https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react
 * https://palantir.github.io/tslint/
+
+## Jest
+* https://facebook.github.io/jest/docs/en/troubleshooting.html
+* https://nodejs.org/en/docs/inspector/
+
+## UI testing
+* http://nightwatchjs.org
 
 ## IIS
 ```
