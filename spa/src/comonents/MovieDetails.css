@@ -1,0 +1,10 @@
+.vote-wrapper {
+  background-color: lightGray;
+  width: 100px;
+  margin-bottom: 12px
+}
+
+.vote {
+  height: 1em;
+  background-color: green;
+}
