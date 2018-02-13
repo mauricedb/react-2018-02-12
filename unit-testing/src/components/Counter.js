@@ -6,15 +6,7 @@ class Counter extends Component {
   onClick = () => {
     this.setState(state => ({
       counter: state.counter + 1
-    }), () => {
-      console.log(this.state)
-    });
-    
-    this.setState(state => ({
-      counter: state.counter + 1
-    }), () => {
-      console.log(this.state)
-    });
+    }));
   };
 
   render() {

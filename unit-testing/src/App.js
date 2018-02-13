@@ -2,20 +2,12 @@ import React, { Component } from 'react';
 
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 
-import Counter from './comonents/Counter';
-import MoviesPresentation from './comonents/MoviesPresentation';
-import MovieDetails from './comonents/MovieDetails';
-import Logger from './comonents/Logger';
+import Counter from './components/Counter';
+import MoviesPresentation from './components/MoviesPresentation';
+import MovieDetails from './components/MovieDetails';
+import Logger from './components/Logger';
 
 class App extends Component {
-  state = {};
-
-  componentDidMount() {
-    setInterval(() => {
-      this.setState({});
-    }, 1000);
-  }
-
   render() {
     return (
       <BrowserRouter>
