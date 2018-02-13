@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 import './MovieDetails.css';
 import movies from './movies.json';
 
-export default ({ id }) => {
+import { Prompt } from 'react-router-dom';
+
+export default ({ match }) => {
+  const id = +match.params.movieId;
+  console.log(match, id);
   const movie = movies.find(m => m.id === id);
 
   return (
@@ -23,6 +27,12 @@ export default ({ id }) => {
       <img
         src={`https://image.tmdb.org/t/p/w342${movie.poster_path}`}
         alt={movie.title}
+      />
+      <Prompt
+        message={location => {
+          console.log(location)
+          return 'Are you sure?';
+        }}
       />
     </div>
   );

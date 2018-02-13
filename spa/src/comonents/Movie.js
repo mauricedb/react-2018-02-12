@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default ({ movie, selectMovie }) => (
-  <li onClick={() => selectMovie(movie)}>{movie.title}</li>
+export default ({ movie }) => (
+  <li>
+    <Link to={`/movie/${movie.id}`}>{movie.title}</Link>
+  </li>
 );

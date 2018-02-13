@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Movie from './Movie';
 import movies from './movies.json';
 
-export default ({ selectMovie }) => {
+export default ({ title }) => {
   return (
     <div>
-      <h2>Movies</h2>
+      <h2>{title}</h2>
 
-      <ul>
-        {movies.map(movie => (
-          <Movie key={movie.id} movie={movie} selectMovie={selectMovie} />
-        ))}
-      </ul>
+      <ul>{movies.map(movie => <Movie key={movie.id} movie={movie} />)}</ul>
     </div>
   );
 };
