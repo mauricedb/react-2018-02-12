@@ -1,23 +1,13 @@
 import React, { Component } from 'react';
-
+import moviesStateHOC from './moviesStateHOC';
 import './MovieDetails.css';
 
 class MovieDetails extends Component {
-  state = { movie: null };
-
-  async componentDidMount() {
+  render() {
+    const { movies } = this.props;
     const { match } = this.props;
     const id = +match.params.movieId;
-
-    const response = await fetch('/movies.json');
-    const movies = await response.json();
     const movie = movies.find(m => m.id === id);
-
-    this.setState({ movie });
-  }
-
-  render() {
-    const { movie } = this.state;
 
     if (!movie) {
       return 'Loading...';
@@ -46,4 +36,4 @@ class MovieDetails extends Component {
   }
 }
 
-export default MovieDetails;
+export default moviesStateHOC(MovieDetails);
