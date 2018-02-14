@@ -46,6 +46,10 @@
 ## UI testing
 * http://nightwatchjs.org
 
+## TSLint
+* https://palantir.github.io/tslint/rules/
+* https://www.npmjs.com/package/tslint-config-prettier
+
 ## IIS
 ```
 <?xml version="1.0" encoding="utf-8"?>
