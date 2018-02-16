@@ -50,6 +50,11 @@
 * https://palantir.github.io/tslint/rules/
 * https://www.npmjs.com/package/tslint-config-prettier
 
+## Bootstrap
+http://getbootstrap.com
+https://bootswatch.com
+https://wrapbootstrap.com
+
 ## IIS
 ```
 <?xml version="1.0" encoding="utf-8"?>
