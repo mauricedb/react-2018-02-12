@@ -17,7 +17,7 @@ module.exports = {
       selenium_port: 4444,
       selenium_host: 'localhost',
       desiredCapabilities: {
-        browserName: 'MicrosoftEdge'
+        browserName: 'chrome'
       }
     }
   }
