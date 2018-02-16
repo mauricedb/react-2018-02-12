@@ -9,6 +9,7 @@
     "selenium-server": "^3.9.1"
   },
   "scripts": {
-    "test-e2e": "nightwatch"
+    "test-e2e": "nightwatch",
+    "test-e2e:f": "nightwatch --env firefox"
   }
 }
