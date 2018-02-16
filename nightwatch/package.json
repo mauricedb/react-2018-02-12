@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "nightwatch": "^0.9.19"
+    "chromedriver": "^2.35.0",
+    "nightwatch": "^0.9.19",
+    "selenium-server": "^3.9.1"
   },
   "scripts": {
     "test-e2e": "nightwatch"
