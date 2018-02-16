@@ -1,0 +1,21 @@
+{
+  "src_folders": ["tests"],
+  "selenium": {
+    "start_process": true,
+    "server_path": "./selenium-server-standalone-2.53.1.jar",
+    "cli_args": {
+      "webdriver.chrome.driver": "./chromedriver_win32/chromedriver.exe",
+      "webdriver.gecko.driver": "./geckodriver-v0.19.1-win64/geckodriver.exe",
+      "webdriver.edge.driver":"./MicrosoftWebDriver.exe"
+    }
+  },
+  "test_settings": {
+    "default": {
+      "selenium_port": 4444,
+      "selenium_host": "localhost",
+      "desiredCapabilities": {
+        "browserName": "MicrosoftEdge"
+      }
+    }
+  }
+}
