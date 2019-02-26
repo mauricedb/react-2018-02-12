@@ -1,5 +1,7 @@
 # react-2018-02-12
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mauricedb/react-2018-02-12.svg)](https://greenkeeper.io/)
+
 
 ## React
 * https://www.javascriptstuff.com/react-starter-projects/
