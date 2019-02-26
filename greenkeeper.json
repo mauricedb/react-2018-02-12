@@ -1,0 +1,16 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "Redux/redux-demo/package.json",
+        "better-components/package.json",
+        "first-app/package.json",
+        "nightwatch/package.json",
+        "spa/package.json",
+        "tooling/demo/package.json",
+        "tooling/tsdemo/package.json",
+        "unit-testing/package.json"
+      ]
+    }
+  }
+}
